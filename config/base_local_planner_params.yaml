@@ -1,0 +1,140 @@
+TrajectoryPlannerROS:
+
+# Robot Configuration Parameters
+  max_vel_x: 0.18
+  min_vel_x: 0.08
+
+  max_vel_theta:  1.0
+  min_vel_theta: -1.0
+  min_in_place_vel_theta: 1.0
+
+  acc_lim_x: 1.0
+  acc_lim_y: 0.0
+  acc_lim_theta: 0.6
+
+# Goal Tolerance Parameters
+  xy_goal_tolerance: 0.10
+  yaw_goal_tolerance: 0.05
+
+# Differential-drive robot configuration
+  holonomic_robot: false
+
+# Forward Simulation Parameters
+  sim_time: 0.8
+  vx_samples: 18
+  vtheta_samples: 20
+  sim_granularity: 0.05
+
+
+EBandPlannerROS:
+  # Common Parameters
+  xy_goal_tolerance: 0.15  # Distance tolerance for reaching the goal pose
+  yaw_goal_tolerance: 0.13  # Orientation tolerance for reaching the desired goal pose
+  rot_stopped_vel: 0.05  # Angular velocity lower bound that determines if the robot should stop to avoid limit-cycles or locks
+  trans_stopped_vel: 0.05  # Linear velocity lower bound that determines if the robot should stop to avoid limit-cycles or locks
+
+  # Visualization Parameters
+  marker_lifetime: 20.0  # Lifetime of eband visualization markers
+
+  # Trajectory Controller Parameters
+  max_vel_lin: 0.75  # Maximum linear velocity
+  max_vel_th: 1.0  # Maximum angular velocity
+  min_vel_th: 0.5  # Minimum angular velocity
+  min_in_place_vel_th: 2.0  # Minimum in-place angular velocity
+  k_prop: 1.0  # Proportional gain of the PID controller
+  k_damp: 3.5  # Damping gain of the PID controller
+  Ctrl_Rate: 50  # Control rate
+  max_translational_acceleration: 2.5  # Maximum linear acceleration
+  max_rotational_acceleration: 1.5  # Maximum angular acceleration
+  differential_drive: true  # Denotes whether to use the differential drive mode
+  max_acceleration: 2.5  # Maximum allowable acceleration
+
+
+
+TebLocalPlannerROS:
+
+  #odom_topic: odom
+  #map_frame: /odom
+
+  teb_autosize: True
+  dt_ref: 0.3
+  dt_hysteresis: 0.03
+  global_plan_overwrite_orientation: True
+  max_global_plan_lookahead_dist: 1.0
+  feasibility_check_no_poses: 1
+
+  wheelbase: 0.0
+  acc_lim_x: 0.25
+  acc_lim_y: 0.25
+  acc_lim_theta: 1.5
+
+  footprint_model: # types: "point", "circular", "two_circles", "line", "polygon"
+    type: "circular"
+    radius: 0.3 #
+  #  vertices: [ [-0.2, -0.25], [-0.2, 0.3], [0.2, 0.3], [0.2, -0.25] ]
+
+  # GoalTolerance
+  xy_goal_tolerance: 0.2
+  yaw_goal_tolerance: 0.1
+  free_goal_vel: False
+
+  # Obstacles
+  min_obstacle_dist: 0.4
+  include_costmap_obstacles: True
+  costmap_obstacles_behind_robot_dist: 1.0
+  obstacle_poses_affected: 10
+  costmap_converter_spin_thread: True
+  costmap_converter_rate: 5
+  min_obstacle_dist: 0.35
+  inflation_dist: 0.45
+  dynamic_obstacle_inflation_dist: 0.6
+  obstacle_association_force_inclusion_factor: 2.0
+  obstacle_association_cutoff_factor: 4.0
+
+DWAPlannerROS:
+
+# Robot Configuration Parameters
+  max_vel_x: 0.22
+  min_vel_x: -0.22
+
+  max_vel_y: 0.0
+  min_vel_y: 0.0
+
+# The velocity when robot is moving in a straight line
+  max_vel_trans:  0.22
+  min_vel_trans:  0.11
+
+  max_vel_theta: 2.75
+  min_vel_theta: 1.37
+
+  acc_lim_x: 2.5
+  acc_lim_y: 0.0
+  acc_lim_theta: 3.2 
+
+# Goal Tolerance Parametes
+  xy_goal_tolerance: 0.05
+  yaw_goal_tolerance: 0.17
+  latch_xy_goal_tolerance: false
+
+# Forward Simulation Parameters
+  sim_time: 1.5
+  vx_samples: 20
+  vy_samples: 0
+  vth_samples: 40
+  controller_frequency: 10.0
+
+# Trajectory Scoring Parameters
+  path_distance_bias: 32.0
+  goal_distance_bias: 20.0
+  occdist_scale: 0.02
+  forward_point_distance: 0.325
+  stop_time_buffer: 0.2
+  scaling_speed: 0.25
+  max_scaling_factor: 0.2
+
+# Oscillation Prevention Parameters
+  oscillation_reset_dist: 0.05
+
+# Debugging
+  publish_traj_pc : true
+  publish_cost_grid_pc: true

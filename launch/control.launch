@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Send fake joint values-->
+  <node name="odom_node" pkg="skid_steer_bot" type="odom_movement_detector.py" output="screen"/>
+
+  <node name="control_node" pkg="skid_steer_bot" type="test_movement.py" output="screen"/>
+
+</launch>
