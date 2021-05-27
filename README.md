@@ -67,9 +67,9 @@ It have to be change also the map it is going to be use. To change it yo need to
 
 using the name of the map of the used scenario.
  
-##Change Local path Planner
+## Change Local path Planner
 
-##Change Goals
+## Change Goals
 
 To change the goals yo need to go to catkin_ws/src/skid_steer_bot/src/app.py and change the following lines.
 ```sh
@@ -77,6 +77,7 @@ To change the goals yo need to go to catkin_ws/src/skid_steer_bot/src/app.py and
     goal.target_pose.pose.position.y =-14.321036
 ```
 You can chose between the following goals listed here below.
+```sh
 Hospital path
 -Simple paths
  x:-0.846702
@@ -84,7 +85,9 @@ Hospital path
 -Complex path
  x:34.308149
  y:-14.321036
+```
 
+```sh
 Cellar paths
 -Simple path
  x:-8.397526
@@ -92,7 +95,9 @@ Cellar paths
 -Complex path
  x:10.028757
  y:-14.626811
+```
 
+```sh
 Laboraty paths
 -Simple path
  x:8.532881
@@ -100,7 +105,7 @@ Laboraty paths
 -Complex path
  x:11.557900
  y:10.099174
-
+```
 
 ## Run the Code
 
@@ -228,9 +233,9 @@ Tiene que ser cambiado tambien el mapa que se va a utilizar. Para cambiarlo es n
 
 Usando el nombre de los mapas del escenario utilizado.
  
-##Cambiar planificador de ruta local
+## Cambiar planificador de ruta local
 
-##Cambiar metas
+## Cambiar metas
 
 Para cambiar la meta es necesario ir a la carpeta catkin_ws/src/skid_steer_bot/src/app.py y cambiar las siguientes lineas de codigo.
 ```sh
@@ -238,6 +243,7 @@ Para cambiar la meta es necesario ir a la carpeta catkin_ws/src/skid_steer_bot/s
     goal.target_pose.pose.position.y =-14.321036
 ```
 Se puede elegir entre las siguientes metas que se enlistan abajo.
+```sh
 Rutas del hospital
 -Simple paths
  x:-0.846702
@@ -245,7 +251,9 @@ Rutas del hospital
 -Complex path
  x:34.308149
  y:-14.321036
+```
 
+```sh
 Rutas del almacen
 -Simple path
  x:-8.397526
@@ -253,7 +261,9 @@ Rutas del almacen
 -Complex path
  x:10.028757
  y:-14.626811
+```
 
+```sh
 Rutas del laboratorio
 -Simple path
  x:8.532881
@@ -261,7 +271,7 @@ Rutas del laboratorio
 -Complex path
  x:11.557900
  y:10.099174
-
+```
 
 ## Iniciar el codigo
 
