@@ -78,7 +78,7 @@ To change the goals yo need to go to catkin_ws/src/skid_steer_bot/src/app.py and
 ```
 You can chose between the following goals listed here below.
 ```sh
-Hospital path
+Hospital paths
 -Simple paths
  x:-0.846702
  y:-14.261468
@@ -86,6 +86,7 @@ Hospital path
  x:34.308149
  y:-14.321036
 ```
+![hospital](images/hospital_tot.PNG)
 
 ```sh
 Cellar paths
@@ -96,6 +97,7 @@ Cellar paths
  x:10.028757
  y:-14.626811
 ```
+![almacen](images/almacen_tot.PNG)
 
 ```sh
 Laboraty paths
@@ -106,6 +108,7 @@ Laboraty paths
  x:11.557900
  y:10.099174
 ```
+![lab](images/lab_tot.PNG)
 
 ## Run the Code
 
@@ -252,6 +255,7 @@ Rutas del hospital
  x:34.308149
  y:-14.321036
 ```
+![hospital](images/hospital_tot.PNG)
 
 ```sh
 Rutas del almacen
@@ -262,6 +266,7 @@ Rutas del almacen
  x:10.028757
  y:-14.626811
 ```
+![almacen](images/almacen_tot.PNG)
 
 ```sh
 Rutas del laboratorio
@@ -272,6 +277,7 @@ Rutas del laboratorio
  x:11.557900
  y:10.099174
 ```
+![lab](images/lab_tot.PNG)
 
 ## Iniciar el codigo
 
@@ -312,7 +318,7 @@ $ rosrun skid_steer_bot app.py
 ```
 
 
-![Gazebo & RViz with costmap](images/RvizGazebo.png)
+![Gazebo & RViz with costmap](images/global.PNG)
 
 
 ###### Probando 
@@ -329,3 +335,4 @@ Se debe ver un resultado similar al de abajo.
 ## Informacion
 
 Este proyecto esta basado en un proyecto realizado por el MIT el cual puede encontralo [aqui](https://github.com/Heych88/skid_steer_bot).
+
