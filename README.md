@@ -149,19 +149,16 @@ $ rosrun skid_steer_bot app.py
 ```
 
 
-![Gazebo & RViz with costmap](images/RvizGazebo.png)
+![Gazebo & RViz with costmap](images/global.PNG)
 
 
 ###### Testing 
 
 1. In Rviz, click on the 2D Nav Goal in the top menu. 
 2. Click on the Rviz map where you want the robot to navigate too. 
-
-You should arrive at a result similar to the below.
+3. Also you can use the app.py to control the robot using the stablished goals and measuring the time that last the robot to get to the goal.
 
 ![navigation to a goal location](images/nav_goal.png)
-
-3. Also you can use the app.py to control the robot using the stablished goals and measuring the time that last the robot to get to the goal.
 
 ## Information
 
@@ -325,12 +322,9 @@ $ rosrun skid_steer_bot app.py
 
 1. En Rviz, pulsa en 2D Nav Goal en la parte superior del menu. 
 2. Pulsa tambien en el mapa de Rviz hacia donde se quiera que el robot se dirija. 
-
-Se debe ver un resultado similar al de abajo.
+3. Tambien se puede utilizar el archivo app.py para controlar el robot utilizando las metas establecidas y midiendo el tiempo que el robot tarda en realizar la ruta completa.
 
 ![navigation to a goal location](images/nav_goal.png)
-
-3. Tambien se puede utilizar el archivo app.py para controlar el robot utilizando las metas establecidas y midiendo el tiempo que el robot tarda en realizar la ruta completa.
 
 ## Informacion
 
