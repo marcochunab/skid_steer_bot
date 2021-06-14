@@ -349,3 +349,9 @@ $ rosrun skid_steer_bot app.py
 
 Este proyecto esta basado en un proyecto realizado por el MIT [aqui](https://github.com/Heych88/skid_steer_bot).
 
+
+## Videotutorial
+
+Un videotutorial acerca de como utilizar el repositorio puede ser encontrado en el siguiente link:
+[aqui](https://.youtu.be/dKSRzhquE_A).
+
