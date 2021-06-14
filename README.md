@@ -174,6 +174,13 @@ $ rosrun skid_steer_bot app.py
 This project is based on an MIT project found [here](https://github.com/Heych88/skid_steer_bot).
 
 
+## Videotutorial
+
+A videotutorial about how to use the repository can be found in the next link:
+[here](https://youtu.be/dKSRzhquE_A).
+
+
+
 # Español
 Este repositorio contiene una implementación utilizando el sistema operativo para robots (ROS por sus siglas en ingles) de un modelo de un robot de cuatro ruedas utilizando las librería del navigation stack de ROS.
 Este repositorio también contiene tres escenarios basados en áreas en las cuales los robots de servicio son utilizados con más frecuencia, siendo estos un hospital, un almacén y un laboratorio.
@@ -353,5 +360,5 @@ Este proyecto esta basado en un proyecto realizado por el MIT [aqui](https://git
 ## Videotutorial
 
 Un videotutorial acerca de como utilizar el repositorio puede ser encontrado en el siguiente link:
-[aqui](https://.youtu.be/dKSRzhquE_A).
+[aqui](https://youtu.be/dKSRzhquE_A).
 
